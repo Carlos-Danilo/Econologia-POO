@@ -1,0 +1,30 @@
+
+Objetivo do sistema 
+
+Nas cidades, muitas pessoas não sabem exatamente como separar o lixo reciclável do orgânico, nem onde descartar corretamente materiais como eletrônicos, óleo de cozinha, pilhas ou vidro. Isso acaba em desperdício de materiais recicláveis e aumento da poluição, além de dificultar o trabalho das cooperativas de reciclagem.
+
+O objetivo desse sistema é oferecer uma solução de software que ajude os cidadãos a identificar como descartar corretamente cada tipo de resíduo, indique pontos de coleta próximos e incentive práticas sustentáveis por meio de recompensas.
+
+
+
+Perfis de Usuários Envolvidos (Público-Alvo)
+
+Moradores de áreas urbanas (clientes)
+
+Prefeituras e secretarias de meio ambiente (admins)
+
+Cooperativas de reciclagem (profissional)
+
+ONGs ambientais (profissional)
+
+
+
+
+Principais Funcionalidades
+
+Mapa com pontos de coleta por tipo de material;
+
+Agendamento de coleta de recicláveis em casa (parceria com cooperativas);
+
+Sistema de recompensas por volume reciclado
+
