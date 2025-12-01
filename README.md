@@ -1,6 +1,13 @@
 # Econologia---POO
 
 
+### 👥 Público-Alvo
+
+* Moradores de áreas urbanas
+* Prefeituras e secretarias de meio ambiente
+* Cooperativas de reciclagem
+* ONGs ambientais
+
 
 
 ## 👨‍💻 Equipe
