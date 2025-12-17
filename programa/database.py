@@ -1,24 +1,32 @@
 import sqlite3
 
 class Database:
-    def __init__(self, nome_db="sistema.db"):
-        self.nome_db = nome_db
+    @staticmethod
+    def conectar():
+        return sqlite3.connect("sistema.db", check_same_thread=False)
 
-    def conectar(self):
-        return sqlite3.connect(self.nome_db)
-
-    def criar_tabelas(self):
-        conn = self.conectar()
+    @staticmethod
+    def criar_tabelas():
+        conn = Database.conectar()
         cursor = conn.cursor()
+
+        cursor.execute("""
+        CREATE TABLE IF NOT EXISTS admin (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nome TEXT,
+            email TEXT UNIQUE,
+            senha TEXT
+        )
+        """)
 
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS morador (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            nome TEXT NOT NULL,
-            email TEXT NOT NULL,
+            nome TEXT,
+            email TEXT,
             fone TEXT,
-            pontos INTEGER DEFAULT 0,
-            senha TEXT NOT NULL
+            pontos INTEGER,
+            senha TEXT
         )
         """)
 
